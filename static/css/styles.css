@@ -1,0 +1,165 @@
+/* Importing Google Fonts for modern typography */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Global Body Styles */
+body {
+    font-family: 'Roboto', sans-serif; /* Updated to use Roboto */
+    background-color: #1c1c1c; /* Dark background for sleek look */
+    color: #fff; /* Light text for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-color: #212121; /* Deep background for header */
+    color: #f1f1f1; /* Light text for header */
+    text-align: center;
+    padding: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+    border-bottom: 4px solid #4CAF50; /* Green line below header */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-logo {
+    max-height: 60px; /* Adjust size of logo */
+    margin-left: 15px;
+}
+
+/* Container for forms and results */
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 50px;
+    background-color: #2a2a2a; /* Slightly darker container for contrast */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    text-align: center;
+}
+
+/* Headings */
+h1, h3 {
+    font-family: 'Roboto', sans-serif; /* Updated to use Roboto */
+    font-weight: 700;
+    color: #4CAF50; /* Vibrant green color for headings */
+}
+
+/* Form and Input Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+h1 {
+    font-family: 'Roboto', sans-serif; /* Updated to use Roboto */
+    font-weight: 700;
+    color: #4CAF50;
+    font-size: 1.5rem; /* Adjusted size for smaller heading */
+    margin-bottom: 20px;
+}
+
+/* Paragraph for the subtitle */
+p {
+    font-size: 1.0rem; /* Smaller font size for subtitle */
+    color: #666; /* Light gray color for the subtitle */
+    font-weight: 400;
+    margin-bottom: 55px;
+    margin-top: 10px;
+}
+
+label {
+    font-size: 1.5rem;
+    color: #a7c2d6;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+textarea, input[type="file"] {
+    width: 80%;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px dotted #444; /* Dotted border for text box */
+    background-color: #333; /* Dark background for inputs */
+    color: #fff;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+textarea:focus, input[type="file"]:focus {
+    outline: none;
+    border-color: #4CAF50; /* Focus effect with green border */
+}
+
+button {
+    width: 50%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Result Section Styles */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    color: #e0e0e0;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+ul li {
+    background: #3b3b3b; /* Darker background for list items */
+    margin: 8px 0;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+ul li:hover {
+    background-color: #4CAF50; /* Hover effect for list items */
+    color: white;
+}
+
+/* Links Styling */
+a {
+    text-decoration: none;
+    color: #4CAF50;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: 600;
+}
+
+a:hover {
+    color: #45a049; /* Hover effect for links */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    header {
+        font-size: 2rem;
+    }
+
+    .container {
+        width: 95%;
+        padding: 30px;
+    }
+
+    textarea, input[type="file"], button {
+        width: 90%;
+    }
+}
