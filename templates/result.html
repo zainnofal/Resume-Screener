@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Screening Results</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Results 📝</h1>
+
+        <p><strong>Job Description:</strong> {{ request.form['job_description'] }}</p>
+
+        <h3>Similarity Score: {{ similarity }}</h3>
+        <h3>Sentiment Score: {{ sentiment_score }}</h3>
+        <h3>Overall Score: {{ overall_score }}</h3>
+
+        <h3>Skills:</h3>
+        <ul>
+            {% for skill in skills %}
+                <li>{{ skill }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Experience:</h3>
+        <ul>
+            {% for exp in experience %}
+                <li>{{ exp }}</li>
+            {% endfor %}
+        </ul>
+
+        <h3>Education:</h3>
+        <ul>
+            {% for edu in education %}
+                <li>{{ edu }}</li>
+            {% endfor %}
+        </ul>
+
+        <!-- Display the predicted category -->
+        <h3>Suggested Field: {{ predicted_category }}</h3>
+
+        <a href="/">Go Back</a>
+    </div>
+</body>
+</html>
